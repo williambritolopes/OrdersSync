@@ -3,11 +3,14 @@
 namespace App\Models;
 
 use App\Enums\SyncAttemptStatus;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SyncAttempt extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'order_id',
         'integration_id',
