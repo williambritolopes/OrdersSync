@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('company_id')
                 ->constrained()
                 ->cascadeOnDelete();
-                
+
             $table->string('name');
             $table->string('type', 50);
             $table->string('base_url')->nullable();
